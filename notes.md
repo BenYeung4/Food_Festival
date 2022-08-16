@@ -1,0 +1,3 @@
+-you’ll help a client with an existing web application designed for a food festival. Because event attendees will use the app on their phones, it needs to be fast and performant, especially on mobile. But the application loads very slowly when the client tries to simulate a 4G internet connection using Chrome DevTools. You’ll optimize the app by minifying assets, adding offline functionality, and turning it into a Progressive Web Application, or PWA.
+
+-The current module project uses an older version of Bootstrap. You'll need to install Bootstrap 4.3.1 using the following command: npm install Bootstrap@4.3.1 -- save. You should also install Popper 1.16.0 using npm install popper@1.16.0 -- save.
