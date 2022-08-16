@@ -1,0 +1,31 @@
+{
+  "name": "food_festival",
+  "version": "1.0.0",
+  "description": "Deployed link: https://benyeung4.github.io/Food_Festival/",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenYeung4/Food_Festival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenYeung4/Food_Festival/issues"
+  },
+  "homepage": "https://github.com/BenYeung4/Food_Festival#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.0",
+    "save": "^2.5.0"
+  }
+}
