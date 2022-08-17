@@ -232,4 +232,17 @@
       </div>
     </footer>
   </body>
+  <!--this script is for the service worker, after installing the npm package, helps retrieve the cached files so when there is little to no connection, the image/file is there-->
+  <script>
+    (function () {
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./service-worker.js")
+          .then(() => console.log("Service Worker registered successfully."))
+          .catch((error) =>
+            console.log("Service Worker registration failed:", error)
+          );
+      }
+    })();
+  </script>
 </html>
