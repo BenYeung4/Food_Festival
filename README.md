@@ -33,7 +33,14 @@ make sure that package.json has the folowing:
 
 - npm install bootstrap@4.3.1 --save
 
-- npm install popper.js@1.16.0 -- save -
+- npm install popper.js@1.16.0 -- save
+
+- npm install -D webpack-bundle-analyzer - analyze our bundle sizes to see how much JavaScript is being processd by the browser
+
+- npm install -D file-loader - optimize the images by emigrating them
+
+- npm install image-webpack-loader - another optimizer used
+
   additional assistance:
 
 https://imagecompressor.com/ - helps reduce image size
