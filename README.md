@@ -41,7 +41,10 @@ make sure that package.json has the folowing:
 
 - npm install image-webpack-loader - another optimizer used
 
-  additional assistance:
+- npm install webpack-dev-server -D - run the code in server without internet
+  ~npm run start:dev - will run in the development server or can use localhost: 8080
+
+additional assistance:
 
 https://imagecompressor.com/ - helps reduce image size
 
