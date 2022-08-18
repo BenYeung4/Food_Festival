@@ -8,6 +8,9 @@ const webpack = require("webpack");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
+// after npm install -D webpack-pwa-manifest
+const WebpackPwaManifest = require("webpack-pwa-manifest");
+
 //create main config object
 // module.exports = {
 //updated to config
@@ -74,6 +77,25 @@ const config = {
     }),
     new BundleAnalyzerPlugin({
       analyzerMode: "static", // the report outputs to an HTML file in the dist folder called, "report.html", we can set this value to disable to temporarily stop the reporting and automatic opening of this report in the browser
+    }),
+
+    //after webpack-pwa-manifest
+    new WebpackPwaManifest({
+      name: "Food Event",
+      short_name: "Foodies",
+      description: "An app that allows you to view upcoming food events.",
+      start_url: "../index.html",
+      background_color: "#01579b",
+      theme_color: "#ffffff",
+      fingerprints: false,
+      inject: false,
+      icons: [
+        {
+          src: path.resolve("assets/img/icons/icon-512x512.png"),
+          sizes: [96, 128, 192, 256, 384, 512],
+          destination: path.join("assets", "icons"),
+        },
+      ],
     }),
   ],
   //finally provide the mode which we want webpack to run, in default it run in production mode but in this case we want it in 'development' mode

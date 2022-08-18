@@ -44,6 +44,8 @@ make sure that package.json has the folowing:
 - npm install webpack-dev-server -D - run the code in server without internet
   ~npm run start:dev - will run in the development server or can use localhost: 8080
 
+- npm install -D webpack-pwa-manifest - blueprint of a PWA, JSON file that will contain the metadata such as a title, a description, and an icon that tells the user's device what it is installing and how it should lok on the home screen.
+
 additional assistance:
 
 https://imagecompressor.com/ - helps reduce image size
